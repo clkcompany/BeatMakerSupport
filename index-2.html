@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beat Studio — Music Maker</title>
+<meta name="description" content="Beat Studio is a pocket music studio: play a realistic drum kit, add bass & melodies, record loops, mix and export your beats.">
+<style>
+  :root{
+    --bg:#0b0b0d; --panel:#16151a; --line:#2a2730;
+    --text:#e8e8ee; --muted:#9a98a6;
+    --blue:#00d1ff; --purple:#bf5af2; --orange:#ff6b00; --green:#9bf400;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#1c1830,#0b0b0d 60%);
+    color:var(--text);line-height:1.6}
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+  header{padding:64px 0 32px;text-align:center}
+  .badge{display:inline-block;padding:6px 14px;border:1px solid #6a3ea1;border-radius:999px;
+    color:#d8a0ff;font-size:12px;letter-spacing:2px;font-weight:800;background:rgba(191,90,242,.12)}
+  h1{font-size:44px;margin:18px 0 8px;letter-spacing:-.5px}
+  h1 span{background:linear-gradient(90deg,var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tag{color:var(--muted);font-size:18px;max-width:620px;margin:0 auto}
+  .cta{margin-top:26px}
+  .btn{display:inline-block;padding:13px 22px;border-radius:12px;font-weight:700;text-decoration:none;
+    background:linear-gradient(90deg,var(--purple),#7b3fe4);color:#fff;box-shadow:0 8px 30px rgba(191,90,242,.35)}
+  .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text);margin-left:10px;box-shadow:none}
+  section{padding:36px 0;border-top:1px solid var(--line)}
+  h2{font-size:24px;margin:0 0 18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .card h3{margin:0 0 6px;font-size:16px}
+  .card p{margin:0;color:var(--muted);font-size:14px}
+  .dot{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+    font-size:18px;margin-bottom:10px}
+  footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+  footer a{color:var(--blue);text-decoration:none;margin:0 8px}
+  a.mail{color:var(--blue);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="badge">BEAT STUDIO</span>
+    <h1>Your pocket <span>music studio</span></h1>
+    <p class="tag">Play a realistic drum kit, add bass &amp; melodies, record a groove,
+      layer it with overdub, mix it and export your track — all on your phone.</p>
+    <div class="cta">
+      <a class="btn" href="#features">Explore features</a>
+      <a class="btn ghost" href="#support">Support</a>
+    </div>
+  </header>
+
+  <section id="features">
+    <h2>What you can do</h2>
+    <div class="grid">
+      <div class="card"><div class="dot" style="background:rgba(255,107,0,.15);color:#ff6b00">🥁</div>
+        <h3>Realistic drum kit</h3><p>Responsive pads with haptics and real recorded acoustic drums.</p></div>
+      <div class="card"><div class="dot" style="background:rgba(0,209,255,.15);color:#00d1ff">🎹</div>
+        <h3>Instruments</h3><p>Play Bass, Synth and E-Piano on a tuned keyboard.</p></div>
+      <div class="card"><div class="dot" style="background:rgba(155,244,0,.15);color:#9bf400">🔴</div>
+        <h3>Record &amp; loop</h3><p>Capture a groove instantly and overdub drums, bass and melodies.</p></div>
+      <div class="card"><div class="dot" style="background:rgba(191,90,242,.15);color:#bf5af2">🎛️</div>
+        <h3>Sequencer &amp; mixer</h3><p>16-step sequencer, per-track volume, metronome and tap tempo.</p></div>
+      <div class="card"><div class="dot" style="background:rgba(255,107,0,.15);color:#ff6b00">🎚️</div>
+        <h3>Sound kits</h3><p>Core Drums, Electro 808, Lo-Fi and Trap — swap in a tap.</p></div>
+      <div class="card"><div class="dot" style="background:rgba(0,209,255,.15);color:#00d1ff">📤</div>
+        <h3>Export WAV</h3><p>Render your beat to an audio file and share it anywhere.</p></div>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Questions, feedback or a bug to report? We'd love to hear from you.</p>
+    <p>Email: <a class="mail" href="mailto:tech@clk.company">tech@clk.company</a></p>
+    <p style="color:var(--muted);font-size:14px">We typically reply within a couple of days.</p>
+  </section>
+
+  <footer>
+    <div>
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms of Use</a>
+    </div>
+    <p>© 2026 CLK Company · Beat Studio</p>
+  </footer>
+
+</div>
+</body>
+</html>
